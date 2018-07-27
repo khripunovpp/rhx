@@ -1,0 +1,88 @@
+@import "bourbon"
+@import "icon.sass"
+
+$color: #014687
+$font1: 'Montserrat', sans-serif
+
+html
+	box-sizing: border-box	
+	padding-bottom: 500px
+
+*,
+*::after,
+*::before
+	box-sizing: inherit
+	outline: none
+
+body
+	margin: 0	
+	overflow-x: hidden
+	font-family: $font1
+	line-height: 1.4
+	font-size: 14px
+
+img
+	max-width: 100%	
+	border: none	
+	outline: none	
+
+a
+	border: none	
+	outline: none	
+
+ul
+	list-style-type: none	
+	margin: 0	
+	padding: 0
+
+select::-ms-expand
+	display: none
+
+%container
+	width: 100%
+	max-width: 1150px	
+	padding: 0 15px
+	margin: 0 auto
+
+%grid
+	display: table
+	width: 100%
+	table-layout: fixed
+
+%part
+	display: table-cell
+	vertical-align: top
+
+.container
+	@extend %container
+
+
+@import "header"
+@import "content"
+@import "side"
+
+.c-btn
+	display: table
+	margin-left: auto
+	margin-right: auto
+	width: 100%
+	max-width: 225px
+	font-size: 18px
+	font-family: $font1
+	background-color: #d51418
+	color: #fff
+	text-decoration: none
+	padding: 10px 8px 8px
+	border: none
+	border-radius: 8px
+	text-align: center
+	transition: all .4s
+	cursor: pointer
+	&:hover
+		transform: scale(1.1)
+	&--blue
+		background-color: $color
+
+
+//ALWAYS END
+@import "media"

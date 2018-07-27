@@ -2,11 +2,10 @@
 @import "icon.sass"
 
 $color: #014687
-$font1: 'Montserrat', sans-serif
+$font: 'Open Sans', sans-serif
 
 html
-	box-sizing: border-box	
-	padding-bottom: 500px
+	box-sizing: border-box
 
 *,
 *::after,
@@ -17,7 +16,7 @@ html
 body
 	margin: 0	
 	overflow-x: hidden
-	font-family: $font1
+	font-family: $font
 	line-height: 1.4
 	font-size: 14px
 
@@ -56,32 +55,52 @@ select::-ms-expand
 .container
 	@extend %container
 
-
-@import "header"
-@import "content"
-@import "side"
-
 .c-btn
 	display: table
-	margin-left: auto
-	margin-right: auto
 	width: 100%
-	max-width: 225px
-	font-size: 18px
-	font-family: $font1
-	background-color: #d51418
-	color: #fff
-	text-decoration: none
-	padding: 10px 8px 8px
+	max-width: 300px
+	background-color: #67C305
 	border: none
-	border-radius: 8px
-	text-align: center
-	transition: all .4s
+	box-shadow: 0 5px 0 #67C305
+	border-radius: 3px
+	color: #fff
+	font-size: 16px
+	font-weight: 600
+	text-transform: uppercase
+	padding: 0
+	padding-left: 50px
 	cursor: pointer
-	&:hover
-		transform: scale(1.1)
-	&--blue
-		background-color: $color
+	position: relative
+	animation: btn 1.5s infinite
+	animation-fill-mode: both
+	&__text
+		display: table
+		width: 100%
+		padding: 23px 0 18px
+		background-color: rgba(255,255,255,.2)
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 18px
+		margin-top: -6px
+		border-top: 8px solid transparent
+		border-bottom: 8px solid transparent
+		border-left: 14px solid #fff
+
+@keyframes btn
+	0
+		transform: scale(1)
+	50%
+		transform: scale(.95)
+		opacity: .7
+	100%
+		transform: scale(1)
+
+
+
+@import "header"
+
 
 
 //ALWAYS END

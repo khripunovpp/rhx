@@ -7,15 +7,49 @@ html
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,700,900")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800")
 		link(rel='stylesheet', href='css/style.css')
 		style.
 			*,
 			*::after,
 			*::before {
-				outline: 1px solid rgba(255,0,0,.5) !important
+				//- outline: 1px solid rgba(255,0,0,.5) !important
 			}
 		script(src="http://ctr-localhost.ru/vlad/jq.js")
 
 	body
 		.w-page
+			p.b-banner #[b WARNING:] Due to the extremely high media demand there is only a limited supply of Long&Strong
+			.b-header
+				.container
+					.b-header__inner
+						.b-header__top
+							.b-header__logo
+								.b-logo
+									img(src="img/logo.jpg", alt="")
+									b Get Rockhard
+							.b-header__guarantees
+								.b-header__guarantees-item #[b Longer ] #[span Stamina]
+								.b-header__guarantees-item #[b Harder ] #[span Erections]
+								.b-header__guarantees-item #[b Stronger] #[span Performance]
+						.b-header__main
+							.b-header__left
+								.b-header__title #[i Medical potency remedy for men] #[b Get even more] #[strong Sexual advantages]
+								.b-header__line #[span MASCULINITY] #[span VITALITY] #[span STRENGTH]
+								.b-header__advatages
+									.b-header__advatages-item #[b Bigger & longer erections] #[span Maximal pleasure & intense orgasms]
+									.b-header__advatages-item #[b Even more lust & energy] #[span Improves stamina & endurance]
+									.b-header__advatages-item #[b More self-confidence in the bed] #[span Experience pure vitality & maximum performance]
+								img.b-header__chanels(src="img/chanels.png", alt="")
+							.b-header__right
+								form.b-header__form.b-form#order_form(action="", method="post")
+									.b-form__inner
+										.b-form__group.b-form__group--select
+											select.b-form__field#country_code_selector
+												option(value="EN") Russia
+										.b-form__group
+											input(type="text", name="name", placeholder="Name").b-form__field
+										.b-form__group
+											input(type="tel", name="phone", placeholder="Phone").only_number.b-form__field
+										button.b-form__btn.c-btn #[span.c-btn__text.button__text Order now]
+										img(src="img/form-security.png", alt="").b-form__security

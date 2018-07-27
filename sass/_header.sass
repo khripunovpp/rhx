@@ -1,0 +1,184 @@
+.b-banner
+	position: absolute
+	z-index: 1
+	top: 0
+	left: 0
+	width: 100%
+	background-color: #ff0000 
+	margin: 0
+	text-align: center
+	color: #fff
+	font-size: 16px
+	padding: 3px 0
+	b
+		font-size: 18px
+
+.b-header
+	background-image: url(../img/header-bg.jpg)
+	background-position: 50% 0
+	background-size: cover
+	position: relative
+	padding: 50px 0
+	opacity: .99
+	&__inner
+		padding-left: 200px
+	&__top
+	&__logo
+		display: inline-block
+		vertical-align: middle
+	&__guarantees
+		text-align: center
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px
+		padding-left: 15px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 0		
+			top: 50%
+			width: 1px
+			height: 50px
+			margin-top: -25px
+			background-color: #0091c4
+		&-item
+			display: inline-block
+			line-height: 1
+			position: relative
+			b
+				display: block
+				color: #141414
+				font-size: 35px
+				font-weight: 800
+				text-transform: uppercase
+			span
+				color: #AA328F
+				text-transform: uppercase
+				font-size: 20px
+				font-weight: 700
+			&+&
+				margin-left: 60px
+				&::before
+					content: '+'
+					position: absolute
+					left: -42px
+					top: 50%
+					margin-top: -12px
+					width: 25px
+					height: 25px
+					background-color: #fff
+					border: 1px solid #eee
+					border-radius: 50%
+					color: #FF7A00
+					font-weight: 800
+					font-size: 26px
+					line-height: 22px
+	&__main
+		@extend %grid
+		padding-top: 50px
+	&__left,
+	&__right
+		@extend %part
+	&__left
+		width: 60%
+	&__right
+		padding-top: 70px
+	&__title
+		margin: 0 0 10px
+		line-height: 1
+		i
+			font-style: normal
+			font-size: 29px
+			color: #2c529d
+		b,strong
+			font-size: 40px
+			font-weight: 800
+			text-transform: uppercase
+			display: block
+		b
+			color: #f47a30
+			margin: 7px 0
+		strong
+			color: #5a266e
+	&__line
+		background-color: #F2803A
+		font-size: 25px
+		color: #fff
+		padding: 2px 15px
+		span
+			display: inline-block
+			position: relative
+		span+span
+			margin-left: 25px
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: -20px
+				margin-top: -5px
+				width: 10px
+				height: 10px
+				background-color: #fff
+				border-radius: 50%
+	&__advatages
+		padding-left: 50px
+		margin: 50px 0 100px
+	&__chanels
+		margin-left: 50px
+	&::after
+		content: ''
+		position: absolute
+		z-index: -1
+		top: 400px
+		left: 50%
+		background-color: #F9FBF8
+		width: 300px
+		height: 1px
+		margin-left: -150px
+		box-shadow: 0 0 300px 300px #F9FBF8
+
+.b-logo
+	background-color: #000
+	color: #fff
+	font-style: italic
+	text-transform: uppercase
+	font-size: 13px
+	display: inline-block
+	text-align: center
+	b,img
+		display: block
+	b
+		padding: 2px 0
+		font-weight: 300
+
+.b-form
+	width: 100%
+	max-width: 300px
+	border: 2px solid #2C529D
+	padding: 25px 10px
+	background-color: #f7f7f1
+	&__inner
+	&__group
+		background-color: #fff
+		border: 1px solid #dfdfdf
+		padding: 10px
+		&+&
+			margin-top: 20px
+		&--select
+			background-image: url(../img/dropdown.png)
+			background-repeat: no-repeat
+			background-position: center right 17px
+	&__field
+		background-color: transparent
+		border: none
+		appearance: none
+		width: 100%
+	&__btn
+		margin-top: 20px
+		max-width: none
+	&__security
+		margin: 15px auto 0
+		display: block
+

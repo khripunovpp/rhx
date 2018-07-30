@@ -39,7 +39,7 @@
 	.container
 		@extend %container-sm
 
-	.b-banner
+	.b-warning
 		font-size: 12px
 
 	.b-header
@@ -107,9 +107,9 @@
 		&__title
 			line-height: 1.2
 			strong
-				font-size: 27px
+				font-size: 26px
 			b
-				font-size: 21px
+				font-size: 20px
 			span
 				font-size: 15px
 		&__list
@@ -133,4 +133,58 @@
 			font-size: 16px
 			font-weight: 400
 
+	.b-banner
+		&__inner
+			display: block
+		&__left
+			display: block
+			width: auto
+			&::after
+				display: none
+		&__right
+			display: block
+			background-color: transparent
+			padding: 0
+			margin-top: 15px
+			&::after,
+			&::before
+				display: none
+		&__text
+			b
+				font-size: 20px
+			span
+				font-size: 15px
+				font-weight: 400
 
+	.b-about
+		background-image: none
+		padding: 0
+		&__title
+			font-size: 26px
+			text-align: center
+		&__inner
+			box-shadow: none
+			background-color: transparent
+			padding-right: 0
+			&::after
+				display: none
+		&__accent
+			background-image: none
+			padding: 15px
+			&::after
+				display: none
+			&::before
+				top: -15px
+				right: -015px
+		&__family
+			display: none
+		&__product
+			position: relative
+			bottom: auto
+			right: auto
+			max-width: 250px
+			display: block
+			margin: 15px auto
+
+	.b-banner
+		margin: 15px 0

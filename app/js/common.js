@@ -1,40 +1,24 @@
+var toForm = function() {
+    $('.pre_toform').click(function(e) {
+        e.preventDefault();
+        var a = $('.js_submit');
+        var b = a.closest('form');
+
+        if ($('form#toform').length) {
+            a = $('#toform .js_submit');
+            b = a.closest('form#toform');
+        }
+
+        if (b.length && a.is(':visible')) {
+            $("html,body").animate({ scrollTop: b.last().offset().top }, 1000);
+        }
+        return false;
+    });
+}
+
+
 $(function() {
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
-
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+    toForm();
 
 });

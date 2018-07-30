@@ -1,0 +1,117 @@
+.b-about
+	background-image: url(../img/section-bg.jpg)
+	background-position: 50% 0
+	background-repeat: no-repeat
+	position: relative
+	padding: 130px 0 30px
+	opacity: .99
+	overflow: hidden
+	&__inner
+		background-color: rgba(#F9FBF8, .8)
+		box-shadow: 0 0 100px 100px rgba(#F9FBF8, .8)
+		padding-right: 35%
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			right: -70px
+			width: 50px
+			height: 50px
+			background-image: url(../img/cube-logo.png)
+			background-repeat: no-repeat
+			background-size: contain
+	&__title
+		font-size: 30px
+		line-height: 1
+		text-transform: uppercase
+		position: relative
+		margin: 0 0 40px
+		b, span
+			display: block
+			font-weight: 800
+		b
+			color: #f47a30
+		span
+			color: #5a266e
+		&::after
+			content: ''
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 100%
+			height: 6px
+			background-image: linear-gradient(to right, #EBCF16, #FBBC6D, transparent)
+	&__text
+		margin: 0
+		strong
+			color: #f47a30
+		&--italic
+			font-style: italic
+	&__accent
+		background-color: #58266F
+		background-image: url(../img/cross-lines.png)
+		background-position: top right -100px
+		background-repeat: no-repeat
+		color: #fff
+		padding: 20px
+		padding-right: 50%
+		margin: 30px 0
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			z-index: -1
+			top: -455px
+			right: 22px
+			width: 468px
+			height: 663px
+			background-image: url(../img/cross-lines-fade.png)
+			background-repeat: no-repeat
+		&::before
+			content: ''
+			position: absolute
+			top: -50px
+			right: 80px
+			width: 59px
+			height: 67px
+			background-image: url(../img/cube-logo.png)
+			background-repeat: no-repeat
+	&__subtitle
+		margin: 0 0 10px
+		font-size: 24px
+		line-height: 1.1
+		text-transform: uppercase
+		font-weight: 400
+		b
+			display: block
+	&__family
+		position: absolute
+		bottom: 0
+		right: -336px
+		background-color: #F97834
+		width: 320px
+		height: 500px
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			right: -10px
+			width: 450px
+			height: 616px
+			background-image: url(../img/family2.png)
+			background-repeat: no-repeat
+		&::before
+			content: ''
+			position: absolute
+			top: -50px
+			right: -44px
+			width: 176px
+			height: 203px
+			background-image: url(../img/cube-logo-big.png)
+	&__product
+		position: absolute
+		right: -60px
+		bottom: -30px
+
+

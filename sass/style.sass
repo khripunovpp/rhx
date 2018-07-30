@@ -39,7 +39,7 @@ select::-ms-expand
 
 %container
 	width: 100%
-	max-width: 1150px	
+	max-width: 1000px	
 	padding: 0 15px
 	margin: 0 auto
 
@@ -59,9 +59,9 @@ select::-ms-expand
 	display: table
 	width: 100%
 	max-width: 300px
-	background-color: #67C305
+	background-color: #00c600
 	border: none
-	box-shadow: 0 5px 0 #67C305
+	box-shadow: 0 5px 0 #00c600
 	border-radius: 3px
 	color: #fff
 	font-size: 16px
@@ -97,10 +97,71 @@ select::-ms-expand
 	100%
 		transform: scale(1)
 
+.b-banner
+	margin: 30px 0
+	overflow: hidden
+	&__inner
+		@extend %grid
+	&__left,
+	&__right
+		@extend %part
+		vertical-align: middle
+		position: relative
+	&__left
+		background-color: #f7c300
+		padding: 20px
+		width: 55%
+		&::after
+			content: ''
+			position: absolute
+			z-index: 1
+			top: 50%
+			right: -60px
+			transform: translateY(-50%)
+			border-top: 70px solid transparent
+			border-bottom: 70px solid transparent
+			border-left: 60px solid #f7c300
+	&__right
+		background-color: #854c08
+		padding: 20px
+		padding-left: 130px
+		&::after,
+		&::before
+			content: ''
+			position: absolute
+			z-index: 1
+			left: 40px
+			border-left: 40px solid transparent
+			border-right: 40px solid transparent
+		&::after
+			top: 50%
+			margin-top: -70px
+			border-top: 50px solid #f7c300
+		&::before
+			bottom: 50%
+			margin-bottom: -70px
+			border-bottom: 50px solid #f7c300
+	&__text
+		color: #262626
+		font-weight: 700
+		margin: 0
+		b,span
+			display: block
+			line-height: 1
+		b
+			font-size: 25px
+			text-transform: uppercase
+			margin-bottom: 8px
+		span
+			font-size: 20px
+	&__btn
+		margin: 0 auto
 
 
 @import "header"
 @import "statistics"
+@import "about"
+@import "medical"
 
 
 

@@ -1,0 +1,53 @@
+.b-statistics
+	padding: 50px 0
+	&__title
+		text-align: center
+		margin: 0
+		strong
+			color: #ff0000
+			font-size: 48px
+			font-weight: 800
+			line-height: 1
+			display: block
+			text-transform: uppercase
+		b
+			color: #050404
+			font-size: 35px
+			font-weight: 800
+			display: block
+			text-transform: uppercase
+		span
+			color: #282828
+			font-size: 20px
+			display: block
+			max-width: 500px
+			margin: 0 auto
+	&__list
+		@extend %grid
+		margin-top: 35px
+	&__item
+		@extend %part
+	&__count
+		width: 197px
+		height: 190px
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: contain
+		display: block
+		margin: 0 auto
+		&--64pr
+			background-image: url(../img/statistics-64pr.png)
+		&--63pr
+			background-image: url(../img/statistics-63pr.png)
+		&--37pr
+			background-image: url(../img/statistics-37pr.png)
+		&--19pr
+			background-image: url(../img/statistics-19pr.png)
+	&__text
+		color: #282828
+		font-size: 20px
+		font-weight: 700
+		line-height: 1.2
+		text-align: center
+		margin: 15px 0 0
+		padding: 0 10px

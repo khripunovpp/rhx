@@ -1,12 +1,136 @@
 @import "bourbon"
 
+@media only screen and (max-width : 1400px)
+	.b-header
+		&__left
+		&__inner
+			padding-left: 0
+			width: 700px
+			margin-left: 262px
+		&__family
+			margin-left: -585px
+		&__top
+			text-align: center
+		&__stamp
+			left: -260px
+			bottom: 260px
+		&__title
+			padding-left: 35px
+			i
+				font-size: 24px
+			b,strong
+				font-size: 30px
+		&__line
+			font-size: 18px
+			margin-left: 35px
+	.b-form
+		max-width: none
+	.b-header
+		&__guarantees
+			margin-left: 0
+			margin-top: 15px
+			&::before
+				display: none
 
-/* Desktop-frist */
 @media only screen and (max-width : 991px)
-	/**/
+	%container-sm
+		max-width: 320px
 
+	.container
+		@extend %container-sm
 
-/* Mobile-first */
-@media only screen and (min-width : 992px)
-	/**/
+	.b-banner
+		font-size: 12px
+
+	.b-header
+		padding: 65px 0 10px
+		&__family
+			display: none
+		&__inner
+			width: auto
+			margin: 0
+			&::after
+				left: -420px
+		&__guarantees
+			padding: 0
+			&-item
+				b
+					font-size: 15px
+				span
+					font-size: 12px
+				&+&
+					margin-left: 20px
+					&::before
+						width: 15px
+						height: 15px
+						font-size: 15px
+						line-height: 12px
+						left: -18px
+		&__main 
+			padding-top: 20px
+			display: block
+		&__left,
+		&__right
+			display: block
+		&__left
+			width: auto
+		&__right
+			padding-top: 20px
+		&__advatages,
+		&__line,
+		&__chanels
+			display: none
+		&__title
+			padding-left: 0
+			text-align: center
+			i,
+			b,
+			strong
+				font-size: 26px
+		&__product
+			position: relative
+			bottom: auto
+			left: auto
+			max-width: 250px
+			margin: 0 auto
+			display: block
+		&__stamp
+			width: 80px
+			left: -15px
+			bottom: 200px
+		&::before
+			display: none
+		&::after
+			box-shadow: 0 0 200px 200px #F9FBF8
+
+	.b-statistics
+		&__title
+			line-height: 1.2
+			strong
+				font-size: 27px
+			b
+				font-size: 21px
+			span
+				font-size: 15px
+		&__list
+			display: block
+		&__item
+			display: table
+			table-layout: fixed
+			width: 100%
+			&+&
+				margin-top: 15px
+			&:nth-child(even)
+				direction: rtl
+		&__count
+			display: table-cell
+			vertical-align: middle
+			width: 80px
+			height: 80px
+		&__text
+			display: table-cell
+			vertical-align: middle
+			font-size: 16px
+			font-weight: 400
+
 

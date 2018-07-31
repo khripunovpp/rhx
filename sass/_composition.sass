@@ -1,0 +1,180 @@
+.b-composition
+	overflow: hidden
+	padding: 50px 0 20px
+	background-image: url(../img/composition-bg.png)
+	background-repeat: no-repeat
+	background-position: 50% 0
+	&__wrap
+		position: relative
+	&__title
+		display: table
+		font-size: 30px
+		line-height: 1
+		text-transform: uppercase
+		position: relative
+		margin: 0 0 80px
+		b, span
+			display: block
+			font-weight: 800
+		b
+			color: #f47a30
+		span
+			color: #5a266e
+		&::after
+			content: ''
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 100%
+			height: 6px
+			background-image: linear-gradient(to right, #EBCF16, #FBBC6D, transparent)
+	&__table
+		display: table
+		width: 100%	
+		table-layout: fixed
+	&__row
+		display: table
+		width: 100%	
+		table-layout: fixed
+	&__col
+		display: table-cell
+		vertical-align: top
+		background-color: rgba(#fff,.8)
+		background-clip: padding-box
+		&--1-3
+			width: 30%
+		&--1-2
+			width: 50%
+		&--likerow
+			background-color: transparent
+		&--first,
+		&--fifth
+			.b-composition
+				&__name
+					color: #fff
+					text-align: center
+					display: block
+					text-shadow: 0 0 5px #000
+				&__img
+					display: block
+					height: 120px
+					padding-top: 10px
+				&__text
+					text-align: center
+		&--first
+			border-bottom: 4px solid transparent
+			.b-composition
+				&__name
+				&__img
+					background-image: url(../img/composition-img1.jpg)
+		&--fifth
+			.b-composition
+				&__img
+					background-image: url(../img/composition-img5.jpg)
+		&--second,
+		&--third,
+		&--fourth,
+		&--sixth
+			border-left: 4px solid transparent
+			.b-composition
+				&__img
+					width: 120px
+		&--second
+			background-color: transparent
+			border-bottom: 4px solid transparent
+			.b-composition
+				&__name
+					color: #f47a30
+				&__img
+					background-image: url(../img/composition-img2.jpg)
+		&--third
+			.b-composition
+				&__name
+					color: #d50023
+				&__img
+					background-image: url(../img/composition-img3.jpg)
+		&--fourth
+			.b-composition
+				&__name
+					color: #083c90
+				&__img
+					background-image: url(../img/composition-img4.jpg)
+		&--third,
+		&--fourth
+			direction: rtl
+			border-bottom: 4px solid transparent
+			.b-composition
+				&__info
+					direction: ltr
+		&--sixth
+			.b-composition
+				&__name
+					color: #083c90
+				&__img
+					height: 250px
+					background-image: url(../img/composition-img6.jpg)
+				&__info
+					vertical-align: middle
+		&--seventh
+			border-top: 4px solid transparent
+			background-image: url(../img/composition-img7.png)
+			background-repeat: no-repeat
+			background-position: 100% 50%
+			padding-right: 25%
+			.b-composition
+				&__name
+					font-size: 25px
+					color: #f47a30
+	&__img
+		display: table-cell
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+	&__info
+		display: table-cell
+		padding: 15px
+	&__name
+		display: inline-block
+		font-size: 17px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 8px
+	&__text
+		margin: 0
+		font-size: 17px
+		line-height: 1.2
+		color: #353535
+	&__cross
+		position: absolute
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		right: -250px
+		top: 210px
+		width: 335px
+		height: 238px
+		background-image: url(../img/composition-cross.png)
+		opacity: .8
+	&__leaf
+		position: absolute
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		&--1
+			width: 204px
+			height: 257px
+			left: -204px
+			top: 30px
+			background-image: url(../img/composition-leaf1.png)
+		&--2
+			z-index: -1
+			width: 230px
+			height: 134px
+			top: -128px
+			left: 30px
+			background-image: url(../img/composition-leaf2.png)
+		&--3
+			z-index: 2
+			width: 180px
+			height: 252px
+			right: -180px
+			top: 300px
+			background-image: url(../img/composition-leaf3.png)

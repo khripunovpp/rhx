@@ -1,0 +1,147 @@
+.b-advantages
+	padding: 50px 0 10px
+	background-image: url(../img/advantages-bg.png)
+	background-repeat: no-repeat
+	background-position: 50% 0
+	&__inner
+		position: relative
+	&__title
+		font-size: 30px
+		line-height: 1
+		text-transform: uppercase
+		position: relative
+		text-align: center
+		margin: 0
+		b, span
+			display: block
+			font-weight: 800
+		b
+			color: #f47a30
+		span
+			color: #5a266e
+		&::after
+			content: ''
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 100%
+			height: 6px
+			background-image: linear-gradient(to right, transparent, #FBBC6D, #EBCF16, #FBBC6D, transparent)
+	&__lead
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+		padding: 0 80px
+		margin: 60px 0
+		strong
+			color: #f47a30
+	&__group
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			z-index: 1
+			left: 50%
+			transform: translateX(-50%)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+			bottom: -150px
+			width: 707px
+			height: 396px
+			background-image: url(../img/advantages-corner.png)
+	&__list
+		display: table
+		width: 970px
+		table-layout: fixed
+	&__item
+		display: table-cell
+		position: relative
+		padding-bottom: 259px
+		padding-left: 8px
+		padding-right: 8px
+		text-align: center
+		&:nth-child(odd)
+			background-image: linear-gradient(to top, transparent 100px, #FAF6F3 100px, transparent)
+		&:nth-child(even)
+			background-image: linear-gradient(to top, #fff, transparent)
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 259px
+		&--1
+			&::after
+				background-image: url(../img/advantages-img1.png)
+		&--2
+			&::after
+				margin-bottom: -100px
+				background-image: url(../img/advantages-img2.png)
+		&--3
+			background-image: linear-gradient(to top, #FAF6F3, transparent)
+		&--4
+			&::after
+				margin-bottom: -100px
+				background-image: url(../img/advantages-img4.png)
+		&--5
+			&::after
+				background-image: url(../img/advantages-img5.png)
+	&__caption
+		color: #5a266e
+		font-weight: 700
+		font-size: 22px
+		line-height: 1.1
+		margin: 0
+	&__text
+		color: #2d2d2d
+		font-size: 15px
+	&__product
+		position: absolute
+		z-index: 2
+		left: 50%
+		bottom: -220px
+		transform: translateX(-50%)
+	&__footer
+		margin-top: 250px
+		text-align: center
+	&__guarantee
+		display: inline-block
+		vertical-align: top
+		text-align: left
+		width: 33%
+		line-height: 1
+		text-transform: uppercase
+		font-style: italic
+		position: relative
+		span
+			display: block
+			font-size: 16px
+			color: #f47a30
+			font-weight: 800
+		b
+			display: block
+			font-size: 23px
+			color: #5a266e
+			font-weight: 800
+		&::after
+			content: ''
+			position: absolute
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+		&--100per
+			&::after
+				top: -145px
+				left: -30px
+				width: 120px
+				height: 102px
+				background-image: url(../img/advantages-stamp-100per.png)
+		&--n1
+			&::after
+				top: -150px
+				right: 0
+				width: 79px
+				height: 118px
+				background-image: url(../img/advantages-stamp-n1.png)
